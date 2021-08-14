@@ -1,0 +1,23 @@
+body{
+    background-color: #904512;
+}
+.box1{
+    height: 90px;
+    width: 90px;
+    background-color: #FFFFFF;
+    background-image: url("sprite.jpg");
+    background-position: -640px -115px;
+}
+
+.box1:hover{
+    background-position: -640px -630px;
+}
+
+.box2{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+}
+.box2:hover{
+    background-color: red;
+}

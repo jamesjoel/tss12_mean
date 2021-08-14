@@ -1,0 +1,18 @@
+body{
+    
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: #0ACED1;
+    border-top : 10px solid #000;
+    border-bottom : 10px solid #000;
+    border-left : 10px solid #882244;
+    border-right : 10px solid #882244;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: #ccdd10;
+    border-radius: 0px 0px 10px 0px;
+}

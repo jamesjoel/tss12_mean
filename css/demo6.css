@@ -1,0 +1,26 @@
+.box1{
+    height: 300px;
+    width: 300px;
+    background-color: #93541A;
+    box-shadow: 5px 5px 10px 5px #000;
+    border-radius: 15px;
+}
+.box1:hover{
+box-shadow: 10px 10px 10px #000;
+}
+h1{
+   font-size: 40px;
+   font-family: Helvetica; 
+   text-shadow: 3px 3px 5px red;
+}
+.mybtn{
+    background-color: #1182BA;
+    color: #FFFFFF;
+    padding : 10px 20px;
+    font-size: 18px;
+    border : none;
+    border-radius: 5px;
+}
+.mybtn:hover{
+    box-shadow: 2px 2px 2px #000;
+}

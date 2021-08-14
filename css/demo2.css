@@ -1,0 +1,33 @@
+/*
+            I. Background in CSS
+        
+        1. background-color : ;
+        2. background-image : url("");
+        3. background-repeat : no-repeat, repeat-x, repeat-y;
+        4. background-size : width height;
+        5. background-position : left top;
+*/
+.box1{
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-image: url("2.jpg");
+    height: 400px;
+    width: 400px;
+    color: red;
+    background-size: 100% 100%;
+    font-size: 20px;
+}
+.box2{
+    height: 400px;
+    width: 400px;
+    background-color: #000000;
+    background-image: url("3.jpg");
+    /* background-size: 100% 100%; */
+    background-position: -900px -450px;
+    background-repeat: no-repeat;
+}
+
+
+body{
+    background-color: #475124;
+}
