@@ -1,0 +1,54 @@
+.topbar h1{
+    color: #3dc4b6;
+}
+.topbar h1 span{
+    
+    color: #444941;
+    font-size: 25px;
+    font-weight: bold;
+}
+.text-green{
+    
+    color: #3dc4b6;
+}
+.bg-light-green{
+     background-color: #3EC5B7;
+    }
+    .jumbotron{
+        min-height: 300px;
+        color: #fff;
+    }
+.btn-green{
+        
+        background-color: #3EC5B7;
+}
+
+.slide .col-md-4{
+    min-height: 150px;
+    /* background-color: red; */
+
+}
+
+
+.bg-dark-green{
+    background-color: #33aa9c;
+}
+#menu ul li a{
+    color:#fff;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+#menu ul .dropdown .dropdown-item{
+    color: #000;
+}
+#menu ul .dropdown .dropdown-item:hover{
+    background-color: #33aa9c;
+    color: #fff;
+}
+
+
+.navbar-toggler{
+    /* background-color: #000; */
+    background-color:rgba(0, 0, 0, .5);
+    color: #fff;
+}
