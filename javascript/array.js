@@ -18,4 +18,9 @@ var b = ["indore", "mumbai", "pune", "delhi", "noida", "bhopal"];
 // console.log(b[4]);
 // 
 
+var a7;
+var a_a;
+
+
+
 
