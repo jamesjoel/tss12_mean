@@ -8,6 +8,8 @@ var app = express();
 // localhost:3000/about
 // localhost:3000/contact
 
+app.use(express.static(__dirname+"/assets"));
+
 
 app.get("/", (req, res)=>{
     // res.send("welcome");
@@ -21,6 +23,10 @@ app.get("/about", (req, res)=>{
 app.get("/contact", (req, res)=>{
     
     res.sendFile(__dirname+"/contact.html");
+})
+
+app.get("/help", (req, res)=>{
+    res.send("<h1>Help Page</h1>");
 })
 
 // console.log(__dirname);

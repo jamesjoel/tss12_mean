@@ -1,0 +1,44 @@
+body{
+    background-color: #F5F5FF;
+}
+.navbar .navbar-brand{
+    font-size: 28px;
+}
+.bg-blue{
+    background-color: #3F4BC5;
+}
+.navbar-text-light a{
+    color: #FFF;
+}
+#menu ul li a{
+    padding: 10px 30px;
+}
+.btn-yellow{
+    background-color: #FECD44;
+    color: #000 !important;
+}
+.text-yellow{
+    color: #FECD44;
+    
+}
+.navbar-toggler{
+    background-color: #FFF !important;
+}
+.navbar-toggler i{
+    color: #3F4BC5;
+}
+.jumbotron{
+    min-height: 300px;
+    background-image: url("../images/1.jpg");
+}
+.yellow-line{
+    width: 50px;
+    height: 5px;
+    background-color: #FECD44;
+    margin: 0 auto;
+}
+.feature .col-md-3{
+    background-color: #fff;
+    box-shadow: 0 0 5px #000;
+    border-radius: 5px;
+}
