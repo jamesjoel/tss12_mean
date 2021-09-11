@@ -5,11 +5,11 @@ var routes = express.Router();
 
 routes.get("/", (req, res) => {
     res.render("home");
-})
+});
 routes.get("/about", (req, res) => {
     res.render("about");
-})
+});
 routes.get("/contact", (req, res) => {
     res.render("contact");
-})
+});
 module.exports = routes;
