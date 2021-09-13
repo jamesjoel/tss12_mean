@@ -1,15 +1,17 @@
 var express = require("express");
 var routes = express.Router();
 
-// express.Router() is a pre-define fun for help create routes in a diff file.
+var home = require("../controllers/home");
+var about = require("../controllers/about");
+var contact = require("../controllers/contact");
+var help = require("../controllers/help");
+var emp = require("../controllers/employee");
 
-routes.get("/", (req, res) => {
-    res.render("home");
-});
-routes.get("/about", (req, res) => {
-    res.render("about");
-});
-routes.get("/contact", (req, res) => {
-    res.render("contact");
-});
+
+routes.use("/", home);
+routes.use("/about", about);
+routes.use("/contact", contact);
+routes.use("/help", help);
+routes.use("/employee", emp);
+
 module.exports = routes;
