@@ -1,4 +1,4 @@
-nvar a = {
+var a = {
     name : "vanshita",
     age : 19,
     city : "indore",
