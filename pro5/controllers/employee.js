@@ -32,6 +32,26 @@ routes.post("/save", (req, res)=>{
     });
 })
 
+
+
+routes.get("/delete/:a", (req, res)=>{
+    var id = req.params.a;
+    var newid = mongodb.ObjectId(id);
+    MongoClient.connect("mongodb://localhost:27017", (err, con)=>{
+        var db = con.db("tss12");
+        db.collection("employee").remove({ _id : newid }, ()=>{
+            res.redirect("/employee");
+        })
+    })
+})
+
+
+
+
+
+
+
+
 routes.get("/detail/:a", (req, res)=>{
     // console.log(req.params.a);
     var id = req.params.a; 
