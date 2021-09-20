@@ -67,6 +67,34 @@ routes.get("/detail/:a", (req, res)=>{
     })
 })
 
+
+routes.get("/edit/:a", (req, res)=>{
+    var id = req.params.a;
+    var newid = mongodb.ObjectId(id);
+
+    MongoClient.connect("mongodb://localhost:27017", (err, con) => {
+        var db = con.db("tss12");
+        db.collection("employee").find({ _id: newid }).toArray((err, result) => {
+            // console.log(result);
+            var pagedata = { result: result[0] };
+            res.render("employee/edit", pagedata);
+        })
+    })
+})
+
+
+routes.post("/update/:a", (req, res)=>{
+    var id = req.params.a;
+    var newid = mongodb.ObjectId(id);
+    MongoClient.connect("mongodb://localhost:27017", (err, con)=>{
+        var db = con.db("tss12");
+        db.collection("employee").updateMany({ _id : newid }, { $set : req.body }, ()=>{
+            res.redirect("/employee");
+        })
+    })
+})
+
+
 module.exports = routes;
 
 /*
