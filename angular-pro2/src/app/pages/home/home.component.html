@@ -1,4 +1,25 @@
 <div class="container mt-2" style="min-height: 750px;">
     <h1>Home Page</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam dolores ullam doloribus eum maiores aperiam deserunt adipisci quam, eaque pariatur consequuntur beatae consectetur velit rerum! Deserunt dolores cupiditate accusantium.</p>
+    <h2>Interpollation in Angular</h2>
+    <h2>{{ a }}</h2>
+    <h2>{{ b }}</h2>
+    <h2>{{ c }}</h2>
+    <h2>{{ d }}</h2>
+
+    <p *ngIf="b!=100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam dolores ullam doloribus eum maiores aperiam deserunt adipisci quam, eaque pariatur consequuntur beatae consectetur velit rerum! Deserunt dolores cupiditate accusantium.</p>
+
+
+    <h1>Hello World</h1>
+
+
+
+
+    <p *ngIf="x=='ram'; else hello">My name is Rohit</p>
+
+    <ng-template #hello>
+        <p>My name is Amar</p>
+    </ng-template>
+
+
+
 </div>

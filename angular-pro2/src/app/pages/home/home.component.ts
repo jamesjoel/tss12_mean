@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  x= "ram";
+
+  
+  a = "rohit";
+  b = 100;
+  c = true;
+  d = ["red", "green", "blue"];
+
   constructor() { }
 
   ngOnInit(): void {
