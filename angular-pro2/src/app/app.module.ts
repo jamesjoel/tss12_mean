@@ -10,6 +10,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HelpComponent } from './pages/help/help.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { Event1Component } from './pages/event1/event1.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
     HeaderComponent,
     FooterComponent,
     HelpComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    Event1Component
   ],
   imports: [
     BrowserModule,

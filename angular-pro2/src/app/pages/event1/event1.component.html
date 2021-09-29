@@ -1,0 +1,35 @@
+<div class="container" style="min-height: 650px;">
+
+    <div class="row">
+        <div (contextmenu)="demo11()" (mouseover)="demo1()" class="box1"></div>
+        <div (mousemove)="demo2()" class="box1"></div>
+        <div (mouseout)="demo3()" class="box1"></div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <input type="text" (keydown)="demo4()"/>
+            <Br />
+            <Br />
+            <input type="text" style="background-color: {{ text_bg_color }};" (focus)="demo7()" (blur)="demo8()" (keypress)="demo5()"/>
+            <br />
+            <Br />
+            <input type="text" (keyup)="demo6()" />
+
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            City : <select (change)="demo9()">
+                <option>Select</option>
+                <option>Indore</option>
+                <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Delhi</option>
+            </select>
+        </div>
+    </div>
+
+
+
+</div>

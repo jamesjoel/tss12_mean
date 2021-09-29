@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  // property
   x= "ram";
 
   
@@ -15,9 +16,23 @@ export class HomeComponent implements OnInit {
   c = true;
   d = ["red", "green", "blue"];
 
+
+  name="Ram Ojha";
+
+  cou=0;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  // this is a method
+  demo1(){
+    //console.log("hello world");
+    this.cou++;
+  }
+
+
+  
 
 }

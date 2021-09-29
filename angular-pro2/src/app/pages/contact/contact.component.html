@@ -1,6 +1,6 @@
 <div class="container mt-2" style="min-height: 750px;">
     <h1>Contact Page</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam dolores ullam doloribus eum maiores
+    <p (dblclick)="demo2()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquam dolores ullam doloribus eum maiores
         aperiam deserunt adipisci quam, eaque pariatur consequuntur beatae consectetur velit rerum! Deserunt dolores
         cupiditate accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus consequatur magni ipsum dicta odio quis explicabo odit accusantium. Sapiente praesentium tempora blanditiis iste a ea, officiis voluptatem consectetur fugit esse?</p>
 
@@ -12,4 +12,19 @@
         <h1 *ngSwitchCase="'yellow'">Pune</h1>
         <h1 *ngSwitchDefault>No City Found</h1>
     </div>
+
+    <Br />
+    <p>{{ x }}</p>
+    <br />
+    <button (click)="demo()" class="btn {{ class_name }}">{{ btn_label }}</button>
+    <br />
+
+    <ng-template [ngIf]="x==true" [ngIfElse]="hello">
+        <div class="box1"></div>
+    </ng-template>
+
+    <ng-template #hello>
+        <div class="box2"></div>
+    </ng-template>
+
 </div>

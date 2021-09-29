@@ -7,6 +7,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HelpComponent } from './pages/help/help.component';
 
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { Event1Component } from './pages/event1/event1.component';
+
 
 const routes: Routes = [
   {
@@ -24,6 +26,10 @@ const routes: Routes = [
   {
     path : "help",
     component : HelpComponent
+  },
+  {
+    path :"event1",
+    component : Event1Component
   },
   {
     path : "**",
